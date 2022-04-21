@@ -15,7 +15,7 @@ prices={'подписчики':0.15,'приват':0.1,'подписчики и�
 
 class SQLighter:
   def __init__(self):
-        self.conn = MySQLdb.connect("localhost","root","A1katra519","zG1cNnxwjz",charset = "utf8", use_unicode = True) #,charset='utf8'
+        self.conn = MySQLdb.connect("localhost","root","A1katra519","bot_db",charset = "utf8", use_unicode = True) #,charset='utf8'
 
         self.c = self.conn.cursor()
   def sel_from(self,m):
