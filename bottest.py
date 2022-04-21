@@ -131,7 +131,7 @@ def add_usr(chat_id,usname):
  SQLighter().insert(query)
 
 
-api='1041126730:AAG9p0QAzFhWNi6JvyAmdMaumjj6HbCfdFI'
+api='5306105189:AAF4gd-Tcc17Unp-YG61FVBoP_khMN-lMKE'
 bot = telebot.TeleBot(api,threaded=False)
 bot.stop_polling()
 bot.delete_webhook()
