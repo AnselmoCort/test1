@@ -314,8 +314,8 @@ def work_with_order(message,func,minim,price):
 @bot.message_handler(func = lambda message:   '💫' in message.text )
 def work_with_order_inst(message):
     usr=SQLighter().update2("SELECT * FROM   nakrutka_bot WHERE id =(%s)"%message.chat.id)
-    if float(usr[0][3])>=float(usr[0][6]):
-        SQLighter().updateargs(""" UPDATE  nakrutka_bot SET balance = balance- (%s) WHERE id = %s """,usr[0][6],message.chat.id)
+    if float(usr[0][3])>=float(usr[0][7]):
+        SQLighter().updateargs(""" UPDATE  nakrutka_bot SET balance = balance- (%s) WHERE id = %s """,usr[0][3],message.chat.id)
         mes='Ваш заказ создан'
         bot.send_message(message.chat.id, mes,parse_mode='HTML',disable_web_page_preview=True)
 
